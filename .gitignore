@@ -103,7 +103,4 @@ dist
 # TernJS port file
 .tern-port
 .idea
-public/covid-data.json
-public/covisual.js*
 COVID-19
-public/covid-data.json
