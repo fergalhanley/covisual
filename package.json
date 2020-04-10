@@ -1,0 +1,43 @@
+{
+  "name": "covisual",
+  "version": "0.1.0",
+  "description": "A WebGL based 3D globe graph of the COVID-19 pandemic time series data",
+  "main": "src/Index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && ENV=production webpack --mode=production",
+    "start": "webpack-dev-server",
+    "clean": "rimraf types/* dist/*",
+    "data": "./scripts/sync-data.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergalhanley/covisual.git"
+  },
+  "keywords": [
+    "covid-19",
+    "caronavirus",
+    "WebGL",
+    "globe"
+  ],
+  "author": "Fergal Hanley <fergalhanley@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/fergalhanley/covisual/issues"
+  },
+  "homepage": "https://github.com/fergalhanley/covisual#readme",
+  "dependencies": {
+    "three": "^0.69.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "webpack-dev-server": "^3.10.3",
+    "ts-loader": "^6.2.2",
+    "ts-node": "^8.8.2",
+    "tslint": "^6.1.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
