@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean && ENV=production webpack --mode=production",
     "start": "webpack-dev-server",
-    "clean": "rimraf types/* dist/*",
-    "data": "./scripts/sync-data.sh"
+    "data": "./scripts/sync-data.sh",
+    "push": "git subtree push --prefix public origin gh-pages",
+    "deploy": "npm run build && npm run data && npm run push"
   },
   "repository": {
     "type": "git",

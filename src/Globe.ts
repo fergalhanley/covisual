@@ -129,7 +129,7 @@ export default class Globe {
         shader = SHADERS["earth"];
         uniforms = THREE.UniformsUtils.clone(shader.uniforms);
 
-        uniforms["texture"].value = THREE.ImageUtils.loadTexture("/images/world-light-min.jpg");
+        uniforms["texture"].value = THREE.ImageUtils.loadTexture("images/world-light-min.jpg");
 
         material = new THREE.ShaderMaterial({
             uniforms: uniforms,
