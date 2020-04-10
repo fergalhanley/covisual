@@ -5,7 +5,7 @@
   "main": "src/Index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run clean && ENV=production webpack --mode=production",
+    "build": "ENV=production webpack --mode=production",
     "start": "webpack-dev-server",
     "data": "./scripts/sync-data.sh",
     "push": "git subtree push --prefix public origin gh-pages",
