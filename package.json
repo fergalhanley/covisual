@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/fergalhanley/covisual#readme",
   "dependencies": {
-    "three": "^0.69.0"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
